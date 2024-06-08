@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="Style.css">
-    <script src="sourse.js"></script>
+    <link rel="stylesheet" href="Style.css">
     <title>My second site</title>
 </head>
+
 <body>
-    
-    <div class="box1" id="productCount">
-        <h1 class="mainText">Обери прилади для живлення від зарядної станції</h1>
-        <button class="button button1" id="addButton">Смартфон</button>
-        <button class="button button2">Телевізор</button>
-        <button class="button button3">Ноутбук</button>
-        <button class="button button4">Монітор</button>
-        <button class="button button5">ПК</button>
-        <button class="button button6">Електрочайник</button>
-        <button class="button button7">Пральна машина</button>
+
+    <div class="box1">
+        <h2 class="titleText">Додати прилад</h2>
+        <input type="text" id="deviceName" placeholder="Назва приладу">
+        <input type="number" id="devicePower" placeholder="Потужність (Вт)">
+        <input type="number" id="deviceQuantity" placeholder="Кількість">
+        <button class="button" id="addDeviceButton">Додати прилад</button>
+
+        <h2 class="titleText">Параметри роботи</h2>
+        <input type="text" id="workDeviceName" placeholder="Назва приладу">
+        <input type="number" id="workDevicePower" placeholder="Потужніть (Вт)">
+        <input type="number" id="workDeviceTime" placeholder="Час роботи (г)">
+        <button class="button" id="setWorkParamsButton">Надати параметри</button>
+
+        <div class="dataDisplay" id="deviceList">Список приладів:</div>
+        <div class="dataDisplay" id="workParamsList">Параметри роботи:</div>
+
     </div>
+
+
+
+<script src="sourse.js"></script>    
 </body>
+
 </html>
+
